@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+Robert Bird Suites & Transfer
+</title>
+
+<meta
+name="description"
+content="Hospedagem confortável e transporte privativo próximo ao Autódromo de Interlagos, São Paulo Expo e Aeroporto de Congonhas.">
+
+<meta
+name="keywords"
+content="airbnb interlagos, hospedagem são paulo, transporte privativo, congonhas transfer, são paulo expo">
+
+<meta
+name="author"
+content="Robert Bird Suites & Transfer">
+
+<!-- Open Graph -->
+
+<meta
+property="og:title"
+content="Robert Bird Suites & Transfer">
+
+<meta
+property="og:description"
+content="Hospedagem confortável e transporte privativo em São Paulo.">
+
+<meta
+property="og:type"
+content="website">
+
+<meta
+property="og:image"
+content="/static/images/share.jpg">
+
+<meta
+property="og:url"
+content="https://robertbirdsuites.com">
+
+<!-- Twitter -->
+
+<meta
+name="twitter:card"
+content="summary_large_image">
+
+<meta
+name="twitter:title"
+content="Robert Bird Suites & Transfer">
+
+<meta
+name="twitter:description"
+content="Hospedagem confortável e transporte privativo em São Paulo.">
+
+<meta
+name="twitter:image"
+content="/static/images/share.jpg">
+
+<!-- Tailwind -->
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- AOS -->
+
+<link
+rel="stylesheet"
+href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+<!-- GLightbox -->
+
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+<!-- Google Fonts -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<style>
+
+body{
+font-family:'Inter',sans-serif;
+scroll-behavior:smooth;
+}
+
+.hero{
+
+background:
+linear-gradient(
+rgba(0,0,0,.55),
+rgba(0,0,0,.55)
+),
+
+url("{{ url_for('static', filename='images/living_room.jpeg') }}");
+
+background-size:cover;
+background-position:center;
+
+}
+
+.airbnb-color{
+background:#FF385C;
+}
+
+.airbnb-color:hover{
+background:#e63154;
+}
+
+.whatsapp-color{
+background:#25D366;
+}
+
+.whatsapp-color:hover{
+background:#1EBE5D;
+}
+
+.card-hover{
+transition:.3s;
+}
+
+.card-hover:hover{
+transform:translateY(-5px);
+}
+
+</style>
+
+</head>
+
+<body class="bg-white text-gray-800">
+
+<!-- MOBILE MENU -->
+
+<div
+id="mobileMenu"
+class="fixed top-0 right-[-100%] w-72 h-full bg-white shadow-xl z-50 transition-all duration-300">
+
+<div class="p-6">
+
+<button
+id="closeMenu"
+class="text-3xl">
+
+✕
+
+</button>
+
+<div class="mt-10 flex flex-col gap-6 text-lg">
+
+<a data-translate="aboutmenu" href="#about">
+Sobre
+</a>
+
+<a data-translate="galeriamenu" href="#gallery">
+Galeria
+</a>
+
+<a data-translate="transportemenu" href="#transport">
+Transporte
+</a>
+
+<a data-translate="localizacaomenu" href="#location">
+Localização
+</a>
+
+<a data-translate="avaliacaomenu" href="#reviews">
+Avaliações
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- NAVBAR -->
+
+<nav
+class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-40">
+
+<div
+class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+<div>
+
+<h1 class="font-bold text-xl">
+
+Robert Bird Suites & Transfer
+
+</h1>
+
+</div>
+
+<!-- Desktop -->
+
+<div
+class="hidden md:flex gap-8 items-center">
+
+<a data-translate="aboutmenu" href="#about">
+Sobre
+</a>
+
+<a data-translate="galeriamenu" href="#gallery">
+Galeria
+</a>
+
+<a data-translate="transportemenu" href="#transport">
+Transporte
+</a>
+
+<a data-translate="localizacaomenu" href="#location">
+Localização
+</a>
+
+<a data-translate="avaliacaomenu" href="#reviews">
+Avaliações
+</a>
+
+<button
+id="langToggle"
+class="border px-3 py-1 rounded-lg">
+
+🇧🇷 PT
+
+</button>
+
+</div>
+
+<!-- Mobile -->
+
+<button
+id="openMenu"
+class="md:hidden text-3xl">
+
+☰
+
+</button>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section
+class="hero min-h-screen flex items-center text-white">
+
+<div
+class="max-w-6xl mx-auto px-6">
+
+<div
+class="max-w-3xl"
+data-aos="fade-up">
+
+<span data-translate="stars"
+class="bg-white/20 px-4 py-2 rounded-full text-sm">
+
+⭐⭐⭐⭐⭐ Hospedagem 5 estrelas no Airbnb
+
+</span>
+
+<h1 data-translate="hero_title"
+class="text-5xl md:text-7xl font-extrabold mt-6 leading-tight">
+
+Hospede-se com conforto & Viaje com facilidade
+
+</h1>
+
+<p data-translate="hero_subtitle"
+class="mt-8 text-xl md:text-2xl text-gray-200">
+
+Hospedagem boutique com transporte privativo próximo ao
+Autódromo de Interlagos,
+São Paulo Expo e Aeroporto de Congonhas.
+
+</p>
+
+<div
+class="mt-10 flex flex-wrap gap-4">
+
+<a data-translate="reservar"
+href="https://www.airbnb.ie/rooms/1509587461106359890"
+target="_blank"
+class="airbnb-color text-white px-8 py-4 rounded-xl font-semibold">
+
+Reservar no Airbnb
+
+</a>
+
+<a
+href="https://wa.me/5511996674535?text=Olá! Gostaria de mais informações sobre hospedagem e transporte."
+target="_blank"
+class="whatsapp-color text-white px-8 py-4 rounded-xl font-semibold">
+
+WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section
+id="about"
+class="py-24 bg-white">
+
+<div
+class="max-w-7xl mx-auto px-6">
+
+<div
+class="grid md:grid-cols-2 gap-16 items-center">
+
+<div data-aos="fade-right">
+
+<img
+src="/static/images/host.jpeg"
+alt="Host"
+class="rounded-3xl shadow-xl w-full">
+
+</div>
+
+<div data-aos="fade-left">
+
+<span data-translate="about"
+class="text-rose-500 font-semibold uppercase tracking-wider">
+
+Seu anfitrião local
+
+</span>
+
+<h2 data-translate="abouth2"
+class="text-4xl md:text-5xl font-bold mt-4">
+
+Muito mais que hospedagem
+
+</h2>
+
+<p data-translate="aboutp"
+class="mt-6 text-lg text-gray-600 leading-relaxed">
+
+Além da hospedagem confortável, oferecemos
+transporte privativo para aeroportos,
+eventos, restaurantes, reuniões de negócios
+e atrações turísticas em São Paulo.
+
+</p>
+
+<p data-translate="aboutpp"
+class="mt-4 text-lg text-gray-600 leading-relaxed">
+
+Nosso objetivo é proporcionar uma experiência
+segura, prática e personalizada durante toda
+a sua estadia.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section
+id="gallery"
+class="py-24 bg-gray-50">
+
+<div
+class="max-w-7xl mx-auto px-6">
+
+<div class="text-center mb-14">
+
+<h2 data-translate="galeriah2"
+class="text-4xl md:text-5xl font-bold">
+
+Galeria
+
+</h2>
+
+<p data-translate="galeriap"
+class="text-gray-500 mt-4">
+
+Conheça os ambientes da acomodação
+
+</p>
+
+</div>
+
+<div class="grid md:grid-cols-3 gap-6">
+
+    <a
+    href="{{ url_for('static', filename='images/living_room.jpeg') }}"
+    class="glightbox">
+
+        <img
+        src="{{ url_for('static', filename='images/living_room.jpeg') }}"
+        class="rounded-2xl shadow-md card-hover w-full h-72 object-cover">
+
+    </a>
+
+    <a
+    href="{{ url_for('static', filename='images/kitchen.jpeg') }}"
+    class="glightbox">
+
+        <img
+        src="{{ url_for('static', filename='images/kitchen.jpeg') }}"
+        class="rounded-2xl shadow-md card-hover w-full h-72 object-cover">
+
+    </a>
+
+    <a
+    href="{{ url_for('static', filename='images/bedroom_1.jpeg') }}"
+    class="glightbox">
+
+        <img
+        src="{{ url_for('static', filename='images/bedroom_1.jpeg') }}"
+        class="rounded-2xl shadow-md card-hover w-full h-72 object-cover">
+
+    </a>
+
+    <a
+    href="{{ url_for('static', filename='images/dinner_room.jpeg') }}"
+    class="glightbox">
+
+        <img
+        src="{{ url_for('static', filename='images/dinner_room.jpeg') }}"
+        class="rounded-2xl shadow-md card-hover w-full h-72 object-cover">
+
+    </a>
+
+    <a
+    href="{{ url_for('static', filename='images/bedroom_2.jpeg') }}"
+    class="glightbox">
+
+        <img
+        src="{{ url_for('static', filename='images/bedroom_2.jpeg') }}"
+        class="rounded-2xl shadow-md card-hover w-full h-72 object-cover">
+
+    </a>
+
+    <a
+    href="{{ url_for('static', filename='images/bedroom_3.jpeg') }}"
+    class="glightbox">
+
+        <img
+        src="{{ url_for('static', filename='images/bedroom_3.jpeg') }}"
+        class="rounded-2xl shadow-md card-hover w-full h-72 object-cover">
+
+    </a>
+
+    <a
+    href="{{ url_for('static', filename='images/bathroom_1.jpeg') }}"
+    class="glightbox">
+
+        <img
+        src="{{ url_for('static', filename='images/bathroom_1.jpeg') }}"
+        class="rounded-2xl shadow-md card-hover w-full h-72 object-cover">
+
+    </a>
+
+    
+    <a
+    href="{{ url_for('static', filename='images/bathroom_2.jpeg') }}"
+    class="glightbox">
+
+        <img
+        src="{{ url_for('static', filename='images/bathroom_2.jpeg') }}"
+        class="rounded-2xl shadow-md card-hover w-full h-72 object-cover">
+
+    </a>
+    
+    
+    <a
+    href="{{ url_for('static', filename='images/parking_1.jpeg') }}"
+    class="glightbox">
+
+        <img
+        src="{{ url_for('static', filename='images/parking_1.jpeg') }}"
+        class="rounded-2xl shadow-md card-hover w-full h-72 object-cover">
+
+    </a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ACCOMMODATION -->
+
+<section
+class="py-24 bg-white">
+
+<div
+class="max-w-7xl mx-auto px-6">
+
+<div class="text-center">
+
+<h2 data-translate="hospedagemh2"
+class="text-4xl md:text-5xl font-bold">
+
+Hospedagem
+
+</h2>
+
+</div>
+
+<div
+class="grid md:grid-cols-4 gap-6 mt-14">
+
+<div class="bg-gray-50 p-8 rounded-2xl text-center shadow-sm">
+
+🏠
+
+<h3 data-translate="hospedagemh3_1" class="font-semibold mt-4">
+
+Até 4 hóspedes
+
+</h3>
+
+</div>
+
+<div class="bg-gray-50 p-8 rounded-2xl text-center shadow-sm">
+
+📶
+
+<h3 class="font-semibold mt-4">
+
+Wi-Fi
+
+</h3>
+
+</div>
+
+<div class="bg-gray-50 p-8 rounded-2xl text-center shadow-sm">
+
+🍳
+
+<h3 data-translate="hospedagemh3_3" class="font-semibold mt-4">
+
+Cozinha completa
+
+</h3>
+
+</div>
+
+<div class="bg-gray-50 p-8 rounded-2xl text-center shadow-sm">
+
+🚗
+
+<h3 data-translate="hospedagemh3_4" class="font-semibold mt-4">
+
+Estacionamento
+
+</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TRANSPORT -->
+
+<section
+id="transport"
+class="py-24 bg-gray-50">
+
+<div
+class="max-w-7xl mx-auto px-6">
+
+<div class="text-center">
+
+<h2 data-translate="transport"
+class="text-4xl md:text-5xl font-bold">
+
+Transporte Privativo
+
+</h2>
+
+</div>
+
+<div
+class="grid md:grid-cols-3 gap-8 mt-14">
+
+<div class="bg-white p-8 rounded-2xl shadow">
+
+✈️
+
+<h3 data-translate="transporth3_1" class="text-xl font-bold mt-4">
+
+Transfer Aeroporto
+
+</h3>
+
+<p data-translate="transportp_1" class="mt-3 text-gray-600">
+
+Traslado seguro para aeroportos.
+
+</p>
+
+</div>
+
+<div class="bg-white p-8 rounded-2xl shadow">
+
+🏎️
+
+<h3  data-translate="transporth3_2" class="text-xl font-bold mt-4">
+
+Autódromo de Interlagos
+
+</h3>
+
+<p data-translate="transportp_2" class="mt-3 text-gray-600">
+
+Eventos esportivos, corridas e shows.
+
+</p>
+
+</div>
+
+<div class="bg-white p-8 rounded-2xl shadow">
+
+🎤
+
+<h3 data-translate="transporth3_3" class="text-xl font-bold mt-4">
+
+Eventos & Shows
+
+</h3>
+
+<p data-translate="transportp_3" class="mt-3 text-gray-600">
+
+Transporte para eventos em toda São Paulo.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- NEARBY -->
+
+<section
+class="py-24 bg-white">
+
+<div
+class="max-w-7xl mx-auto px-6">
+
+<div class="text-center">
+
+<h2 data-translate="proximovelh2"
+class="text-4xl md:text-5xl font-bold">
+
+Próximo ao Imóvel
+
+</h2>
+
+</div>
+
+<div
+class="grid md:grid-cols-4 gap-6 mt-14">
+
+<div class="bg-gray-50 p-8 rounded-2xl shadow-sm">
+
+🏎️
+
+<h3 data-translate="proximovelh3_1" class="font-bold mt-3">
+
+Autódromo de Interlagos
+
+</h3>
+
+<p class="text-gray-500 mt-2">
+
+8 km • 15 min
+
+</p>
+
+</div>
+
+<div class="bg-gray-50 p-8 rounded-2xl shadow-sm">
+
+🎤
+
+<h3 class="font-bold mt-3">
+
+São Paulo Expo  
+
+</h3>
+
+<p class="text-gray-500 mt-2">
+
+6 km • 14 min
+
+</p>
+
+</div>
+
+<div class="bg-gray-50 p-8 rounded-2xl shadow-sm">
+
+✈️
+
+<h3 data-translate="proximovelh3_3" class="font-bold mt-3">
+
+Aeroporto de Congonhas
+
+</h3>
+
+<p class="text-gray-500 mt-2">
+
+9 km • 20 min
+
+</p>
+
+</div>
+
+<div class="bg-gray-50 p-8 rounded-2xl shadow-sm">
+
+🛍️
+
+<h3 class="font-bold mt-3">
+
+SP Market
+
+</h3>
+
+<p class="text-gray-500 mt-2">
+
+4 km • 10 min
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- LOCATION -->
+
+<section
+id="location"
+class="py-24 bg-gray-50">
+
+<div
+class="max-w-7xl mx-auto px-6">
+
+<div class="text-center mb-12">
+
+<h2 data-translate="maps"
+class="text-4xl md:text-5xl font-bold">
+
+Localização
+
+</h2>
+
+</div>
+
+<iframe
+src="https://maps.google.com/maps?q=Rua%20Robert%20Bird%20137%20Sao%20Paulo&t=&z=14&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="500"
+style="border:0;"
+allowfullscreen=""
+loading="lazy"
+class="rounded-3xl shadow-xl">
+</iframe>
+
+</div>
+
+</section>
+
+<!-- REVIEWS -->
+
+<section
+id="reviews"
+class="py-24 bg-white">
+
+<div
+class="max-w-7xl mx-auto px-6">
+
+<div class="text-center">
+
+<span
+class="text-rose-500 font-semibold uppercase tracking-widest">
+
+Airbnb Reviews
+
+</span>
+
+<h2 data-translate="guestsreviews"
+class="text-4xl md:text-5xl font-bold mt-4">
+
+O que nossos hóspedes dizem
+
+</h2>
+
+</div>
+
+<div
+class="grid md:grid-cols-3 gap-8 mt-16">
+
+<div
+class="bg-gray-50 p-8 rounded-2xl shadow-sm">
+
+<div class="text-yellow-400 text-xl">
+
+★★★★★
+
+</div>
+
+<p
+class="mt-4 text-gray-600">
+
+Excelente localização e transporte muito conveniente.
+
+</p>
+
+<div class="mt-4 font-semibold">
+
+Airbnb Guest
+
+</div>
+
+</div>
+
+<div
+class="bg-gray-50 p-8 rounded-2xl shadow-sm">
+
+<div class="text-yellow-400 text-xl">
+
+★★★★★
+
+</div>
+
+<p
+class="mt-4 text-gray-600">
+
+Apartamento confortável e anfitrião extremamente atencioso.
+
+</p>
+
+<div class="mt-4 font-semibold">
+
+Airbnb Guest
+
+</div>
+
+</div>
+
+<div
+class="bg-gray-50 p-8 rounded-2xl shadow-sm">
+
+<div class="text-yellow-400 text-xl">
+
+★★★★★
+
+</div>
+
+<p
+class="mt-4 text-gray-600">
+
+Ótima experiência em São Paulo. Recomendo.
+
+</p>
+
+<div class="mt-4 font-semibold">
+
+Airbnb Guest
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CTA FINAL -->
+
+<section
+class="py-24 bg-gray-900 text-white">
+
+<div
+class="max-w-5xl mx-auto px-6 text-center">
+
+<h2 data-translate="nextstay"
+class="text-4xl md:text-6xl font-bold">
+
+Pronto para sua próxima estadia?
+
+</h2>
+
+<p data-translate="nextsatyp"
+class="mt-6 text-xl text-gray-300">
+
+Reserve sua hospedagem ou solicite transporte privado.
+
+</p>
+
+<div
+class="mt-10 flex flex-wrap justify-center gap-4">
+
+<a data-translate="reservar"
+href="https://www.airbnb.ie/rooms/1509587461106359890"
+target="_blank"
+class="bg-rose-500 hover:bg-rose-600 px-8 py-4 rounded-xl font-semibold">
+
+Reservar no Airbnb
+
+</a>
+
+<a
+href="https://wa.me/5511996674535?text=Olá! Gostaria de mais informações sobre hospedagem e transporte."
+target="_blank"
+class="bg-green-500 hover:bg-green-600 px-8 py-4 rounded-xl font-semibold">
+
+WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer
+class="bg-black text-gray-300">
+
+<div
+class="max-w-7xl mx-auto px-6 py-16">
+
+<div
+class="grid md:grid-cols-3 gap-12">
+
+<div>
+
+<h3
+class="text-white text-xl font-bold">
+
+Robert Bird Suites & Transfer
+
+</h3>
+
+<p data-translate="footer_p"
+class="mt-4 text-gray-400">
+
+Hospedagem confortável e transporte privativo
+em São Paulo.
+
+</p>
+
+</div>
+
+<div>
+
+<h4 data-translate="maps"
+class="text-white font-semibold">
+
+Localização
+
+</h4>
+
+<p class="mt-4">
+
+Rua Robert Bird, 137
+
+<br>
+
+Pedreira
+
+<br>
+
+São Paulo - SP
+
+</p>
+
+</div>
+
+<div>
+
+<h4 data-translate="contato"
+class="text-white font-semibold">
+
+Contato
+
+</h4>
+
+<div
+class="flex flex-col gap-3 mt-4">
+
+<a
+href="https://wa.me/5511996674535"
+target="_blank">
+
+WhatsApp
+
+</a>
+
+<a
+href="https://www.airbnb.ie/rooms/1509587461106359890"
+target="_blank">
+
+Airbnb
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div data-translate="copyright"
+class="border-t border-gray-800 mt-12 pt-8 text-center text-sm">
+
+© 2026 Robert Bird Suites & Transfer.
+Todos os direitos reservados.
+
+</div>
+
+</div>
+
+</footer>
+
+<!-- WHATSAPP FLOATING -->
+
+<a
+href="https://wa.me/5511996674535?text=Olá! Gostaria de mais informações sobre hospedagem e transporte."
+target="_blank"
+class="fixed bottom-6 right-6 w-16 h-16 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-2xl z-50 text-3xl">
+
+💬
+
+</a>
+
+<!-- GLIGHTBOX -->
+
+<script
+src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js">
+</script>
+
+<script>
+
+GLightbox();
+
+</script>
+
+<!-- AOS -->
+
+<script
+src="https://unpkg.com/aos@2.3.4/dist/aos.js">
+</script>
+
+<script>
+
+AOS.init({
+
+duration:1000,
+once:true
+
+});
+
+</script>
+
+<!-- MOBILE MENU -->
+
+<script>
+
+const mobileMenu =
+document.getElementById("mobileMenu");
+
+const openMenu =
+document.getElementById("openMenu");
+
+const closeMenu =
+document.getElementById("closeMenu");
+
+openMenu.addEventListener("click",()=>{
+
+mobileMenu.style.right="0";
+
+});
+
+closeMenu.addEventListener("click",()=>{
+
+mobileMenu.style.right="-100%";
+
+});
+
+
+
+</script>
+
+<!-- LANGUAGE SYSTEM -->
+
+
+<script>
+
+let currentLang = "pt";
+
+const translations = {
+
+pt: {
+
+stars:
+"⭐⭐⭐⭐⭐ Hospedagem 5 estrelas no Airbnb",
+
+hero_title:
+"Hospede-se com conforto & Viaje com facilidade",
+
+hero_subtitle:
+"Hospedagem boutique com transporte privativo próximo ao Autódromo de Interlagos, São Paulo Expo e Aeroporto de Congonhas.",
+
+reservar:
+"Reservar no Airbnb",
+
+aboutmenu:
+"Sobre",
+
+galeriamenu:
+"Galeria",
+
+transportemenu:
+"Transporte",
+
+localizacaomenu:
+"Localização",
+
+avaliacaomenu:
+"Avaliações",
+
+about:
+"Seu anfitrião local",
+
+abouth2:
+"Muito mais que hospedagem",
+
+aboutp:
+"Além da hospedagem confortável, oferecemos transporte privativo para aeroportos, eventos, restaurantes, reuniões de negócios e atrações turísticas em São Paulo.",
+
+aboutpp:
+"Nosso objetivo é proporcionar uma experiência segura, prática e personalizada durante toda a sua estadia.",
+
+galeriah2:
+"Galeria",
+
+galeriap:
+"Conheça os ambientes da acomodação",
+
+hospedagemh2:
+"Hospedagem",
+
+hospedagemh3_1:
+"Até 4 hóspedes",
+
+hospedagemh3_3:
+"Cozinha completa",
+
+hospedagemh3_4:
+"Estacionamento",
+
+transport:
+"Transporte Privativo",
+
+transporth3_1:
+"Transfer Aeroporto",
+
+transportp_1:
+"Translado seguro para aeroportos.",
+
+transporth3_2:
+"Autódromo de Interlagos",
+
+transportp_2:
+"Eventos esportivos, corridas e shows.",
+
+transporth3_3:
+"Eventos & Shows",
+
+transportp_3:
+"Transporte para eventos em toda São Paulo",
+
+proximovelh2:
+"Próximo ao Imóvel",
+
+proximovelh3_1:
+"Autódromo de Interlagos",
+
+proximovelh3_3:
+"Aeroporto de Congonhas",
+
+maps:
+"Localização",
+
+reviews:
+"Avaliações",
+
+guestsreviews:
+"O que os nossos hóspedes dizem",
+
+nextstay:
+"Pronto para sua próxima estadia?",
+
+nextsatyp:
+"Reserve sua hospedagem ou solicite transporte privado",
+
+footer_p:
+"Hospedagem confortável e transporte privativo em São Paulo.",
+
+contato:
+"Contato",
+
+copyright:
+"© 2026 Robert Bird Suites & Transfer. Todos os direitos reservados.",
+
+},
+
+en: {
+
+stars: "⭐⭐⭐⭐⭐ Rated 5 Stars on Airbnb",
+
+hero_title:
+"Stay Comfortably & Travel Easily",
+
+hero_subtitle:
+"Boutique accommodation with private transportation near Interlagos Circuit, São Paulo Expo and Congonhas Airport.",
+
+reservar:
+"Book on Airbnb",
+
+aboutmenu:
+"About",
+
+galeriamenu:
+"Gallery",
+
+transportemenu:
+"Transport",
+
+localizacaomenu:
+"Location",
+
+avaliacaomenu:
+"Reviews",
+
+about:
+"Your Local Host",
+
+abouth2:
+"Much more than hosting",
+
+aboutp:
+"In addition to comfortable accommodations, we offer private transportation to airports, events, restaurants, business meetings, and tourist attractions in São Paulo. Our goal is to provide a safe, convenient, and personalized experience throughout your stay.",
+
+aboutpp:
+"Our goal is to provide a safe, convenient, and personalized experience throughout your stay.",
+
+galeriah2:
+"Gallery",
+
+galeriap:
+"Get to know the accommodation's amenities",
+
+hospedagemh2:
+"Accommodation",
+
+hospedagemh3_1:
+"Up to 4 guests",
+
+hospedagemh3_3:
+"Full kicthen",
+
+hospedagemh3_4:
+"Parking",
+
+transport:
+"Private Transportation",
+
+transporth3_1:
+"Transfer Aeroporto",
+
+transportp_1:
+"Secure airport transfers.",
+
+transporth3_2:
+"Interlagos Racetrack",
+
+transportp_2:
+"Sporting events, races and concerts.",
+
+transporth3_3:
+"Events & Concerts",
+
+transportp_3:
+"Transportation for events throughout São Paulo",
+
+proximovelh2:
+"What's Nearby",
+
+proximovelh3_1:
+"Interlagos Racetrack",
+
+proximovelh3_3:
+"Congonhas Airport",
+
+maps:
+"Where we are?",
+
+reviews:
+"Reviews",
+
+guestsreviews:
+"What our guests are saying",
+
+nextstay:
+"Ready for your next stay?",
+
+nextsatyp:
+"Book your stay or request private transport",
+
+footer_p:
+"Comfortable stays and private transportation in São Paulo",
+
+contato:
+"Contact Us",
+
+copyright:
+"© 2026 Robert Bird Suites & Transfer. All rights reserved.",
+
+}
+
+};
+
+const button =
+document.getElementById("langToggle");
+
+button.addEventListener("click",()=>{
+
+currentLang =
+currentLang === "pt" ? "en" : "pt";
+
+document
+.querySelectorAll("[data-translate]")
+.forEach(element=>{
+
+const key =
+element.dataset.translate;
+
+element.innerText =
+translations[currentLang][key];
+
+});
+
+button.innerHTML =
+currentLang === "pt"
+? "🇧🇷 PT"
+: "🇺🇸 EN";
+
+});
+
+</script>
+
+
+</body>
+
+</html>
